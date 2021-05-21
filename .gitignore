@@ -1,0 +1,7 @@
+
+*.properties
+*.properties.bkup
+
+dashboard/
+DataLogs/
+TuneView/
