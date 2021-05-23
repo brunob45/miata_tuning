@@ -1,7 +1,5 @@
-
-*.properties
-*.properties.bkup
-
+*.bkup
+*.bak
 dashboard/
 DataLogs/
 TuneView/
