@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS Lite! 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Sun May 23 11:07:53 EDT 2021"/>
+<bibliography author="TunerStudio MS Lite! 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Sun May 23 14:51:11 EDT 2021"/>
 <versionInfo fileFormat="5.0" firmwareInfo="MS2%2FExtra+3.4.4+release++20201006+18%3A17BST%28c%29KC%2FJSM%2FJB+++MS2" nPages="7" signature="MS2Extra comms342h2"/>
 <page>
 <pcVariable name="tsCanId">"0"</pcVariable>
 <pcVariable name="tsCanId">"CAN ID 0"</pcVariable>
-<pcVariable digits="0" name="rpmhigh" units="rpm">9000.0</pcVariable>
-<pcVariable digits="0" name="rpmwarn" units="rpm">3000.0</pcVariable>
-<pcVariable digits="0" name="rpmdang" units="rpm">5000.0</pcVariable>
-<pcVariable digits="0" name="loadhigh">400.0</pcVariable>
+<pcVariable digits="0" name="rpmhigh" units="rpm">8000.0</pcVariable>
+<pcVariable digits="0" name="rpmwarn" units="rpm">6500.0</pcVariable>
+<pcVariable digits="0" name="rpmdang" units="rpm">7000.0</pcVariable>
+<pcVariable digits="0" name="loadhigh">100.0</pcVariable>
 <pcVariable name="clt_exp">"Normal"</pcVariable>
 <pcVariable cols="1" digits="1" name="wueAfrTargetOffset" rows="10" units=":1">
          -1.5 
@@ -226,7 +226,7 @@
 <constant digits="1" name="mat0" units="°C">-17.776</constant>
 <constant digits="0" name="matmult" units="%">100.0</constant>
 <constant digits="0" name="tpsMin" units="ADC">0.0</constant>
-<constant digits="0" name="tpsMax" units="ADC">1022.0</constant>
+<constant digits="0" name="tpsMax" units="ADC">1023.0</constant>
 <constant digits="1" name="batt0" units="V">0.1</constant>
 <constant digits="1" name="battmax" units="V">29.7</constant>
 <constant digits="1" name="ego0" units="afr">0.0</constant>
@@ -1498,6 +1498,7 @@
 <constant digits="1" name="testint" units="ms">99.968</constant>
 <constant digits="0" name="testrpm" units="RPM">1200.3841229</constant>
 <constant digits="3" name="testpw" units="ms">3.00033</constant>
+<constant digits="0" name="testinjcnt">0.0</constant>
 <constant name="testsel_inj">"Inj2"</constant>
 <constant name="testsel_coil">"CoilA"</constant>
 <constant cols="12" digits="1" name="advanceTable3" rows="12" units="deg">
