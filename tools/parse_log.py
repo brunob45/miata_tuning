@@ -9,7 +9,7 @@ np.set_printoptions(linewidth=200)
 
 ndigits = 1
 print_array = True
-plot_array = False
+plot_array = True
 
 rpm_bins = [i*500 for i in range(16)]
 rpm_bins[0] = 600  # was 0
@@ -30,13 +30,14 @@ def parse_file(input_file):
     result['time'] = input_file.readline().strip()
     result['log'] = []
     titles = input_file.readline().strip().split('\t')
+    input_file.readline() # units
     for line in input_file:
         items = line.strip().replace(',', '.').split('\t')
         log = {}
         for k, v in enumerate(items):
             log[titles[k]] = float(v)
-        log['AFR'] *= 10
-        log['VE1'] /= 10
+        # log['AFR'] *= 10
+        # log['VE1'] /= 10
         result['log'] += [log]
     return result
 
@@ -117,7 +118,7 @@ def interpolate_grid(grid_z, fill_value):
 
 
 print(end='.', flush=True)
-log = parse_file(open(sys.argv[1]))
+log = parse_file(open(sys.argv[1], encoding='windows-1252'))
 print(end='.', flush=True)
 points = get_points(log, logfct)
 print(end='.', flush=True)
