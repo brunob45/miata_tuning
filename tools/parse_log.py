@@ -18,10 +18,11 @@ map_bins = [i*6+10 for i in range(16)]
 
 
 def logfct(l):
-    # AFRcor = l['AFR']*(l['EGO cor1']/100)
+    AFRcor = l['AFR']*(l['EGO cor1']/100)
     # ratio = (AFRcor/l['AFR Target 1'])-1
     # return ratio * l['VE1']
-    return l['AFR']
+    # return l['AFR']
+    return AFRcor
 
 
 def parse_file(input_file):
