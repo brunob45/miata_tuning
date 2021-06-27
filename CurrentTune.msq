@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS Lite! 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Sun Jun 27 09:22:39 EDT 2021"/>
+<bibliography author="TunerStudio MS Lite! 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Sun Jun 27 09:29:01 EDT 2021"/>
 <versionInfo fileFormat="5.0" firmwareInfo="MS2%2FExtra+3.4.4+release++20201006+18%3A17BST%28c%29KC%2FJSM%2FJB+++MS2" nPages="7" signature="MS2Extra comms342h2"/>
 <page>
 <pcVariable name="tsCanId">"0"</pcVariable>
@@ -122,10 +122,10 @@
          15.0 
       </constant>
 <constant cols="1" digits="1" name="maeBins" rows="4" units="ms">
-         1.5 
-         3.5 
+         1.0 
+         3.0 
          4.5 
-         6.0 
+         5.0 
       </constant>
 <constant cols="1" digits="0" name="iacstepTable" rows="10" units="steps">
          160.0 
@@ -216,7 +216,7 @@
 <constant cols="1" digits="0" name="maeRates" rows="4" units="kPa/s">
          20.0 
          250.0 
-         500.0 
+         800.0 
          1200.0 
       </constant>
 <constant digits="1" name="map0" units="%">10.0</constant>
