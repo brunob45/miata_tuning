@@ -8,8 +8,8 @@ import numpy as np
 np.set_printoptions(linewidth=200)
 
 ndigits = 1
-print_array = True
-plot_array = True
+print_array = 'print' in sys.argv
+plot_array = 'plot' in sys.argv
 
 rpm_bins = [i*500 for i in range(16)]
 rpm_bins[0] = 600  # was 0

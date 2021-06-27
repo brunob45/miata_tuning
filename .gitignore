@@ -3,3 +3,5 @@
 dashboard/
 DataLogs/
 TuneView/
+output.csv
+*.ods#
