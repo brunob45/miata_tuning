@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS Lite! 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Sun Jun 27 09:29:01 EDT 2021"/>
+<bibliography author="TunerStudio MS Lite! 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Sat Jul 24 14:19:18 EDT 2021"/>
 <versionInfo fileFormat="5.0" firmwareInfo="MS2%2FExtra+3.4.4+release++20201006+18%3A17BST%28c%29KC%2FJSM%2FJB+++MS2" nPages="7" signature="MS2Extra comms342h2"/>
 <page>
 <pcVariable name="tsCanId">"0"</pcVariable>
@@ -327,7 +327,7 @@
 <constant digits="0" name="egoLimit" units="%">10.0</constant>
 <constant digits="1" name="stoich" units="AFR">14.7</constant>
 <constant name="enable_pollADC03">"Enable"</constant>
-<constant name="enable_pollADC47">"Disable"</constant>
+<constant name="enable_pollADC47">"Enable"</constant>
 <constant name="enable_pollPWM">"Disable"</constant>
 <constant name="enable_pollports">"Disable"</constant>
 <constant digits="0" name="poll_tableADC03">7.0</constant>
