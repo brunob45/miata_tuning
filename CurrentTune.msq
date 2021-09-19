@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS Lite! 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Sat Sep 18 23:49:35 EDT 2021"/>
+<bibliography author="TunerStudio MS Lite! 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Sun Sep 19 14:41:47 EDT 2021"/>
 <versionInfo fileFormat="5.0" firmwareInfo="MS2%2FExtra+3.4.4+release++20201006+18%3A17BST%28c%29KC%2FJSM%2FJB+++MS2" nPages="7" signature="MS2Extra comms342h2"/>
 <page>
 <pcVariable name="tsCanId">"0"</pcVariable>
@@ -239,8 +239,8 @@
 <constant digits="0" name="crankTolerance" units="%">50.0</constant>
 <constant digits="0" name="asTolerance" units="%">70.0</constant>
 <constant digits="0" name="pulseTolerance" units="%">25.0</constant>
-<constant name="IdleCtl">"None"</constant>
-<constant name="IdleCtl_alg">"Closed-loop"</constant>
+<constant name="IdleCtl">"PWM valve (2 or 3 wire)"</constant>
+<constant name="IdleCtl_alg">"Open-loop (warmup)"</constant>
 <constant name="IdleCtl_home">"Closed"</constant>
 <constant name="IdleCtl_out">"Normal"</constant>
 <constant digits="0" name="IACtstep" units="ms">3.0</constant>
@@ -533,16 +533,16 @@
 <constant name="feature4_0VEtblsize">"16x16"</constant>
 <constant name="feature4_0ftrig">"Off"</constant>
 <constant cols="1" digits="1" name="ipwmTable" rows="10" units="%">
-         45.08 
          41.944 
-         38.808 
-         36.064 
-         32.928 
-         30.184 
-         27.048 
-         23.912 
-         19.992 
-         19.992 
+         41.944 
+         41.944 
+         41.944 
+         41.944 
+         41.944 
+         41.944 
+         41.944 
+         41.944 
+         41.944 
       </constant>
 <constant name="timing_flags">"Use Table"</constant>
 <constant name="use_prediction">"1st Deriv Prediction"</constant>
@@ -661,24 +661,24 @@
 </page>
 <page number="1" size="1024">
 <constant cols="1" digits="0" name="pwmidle_target_rpms" rows="8" units="rpms">
-         1750.0 
-         1275.0 
-         1165.0 
-         1050.0 
-         960.0 
-         909.0 
+         1200.0 
+         1200.0 
+         1200.0 
+         1150.0 
+         1000.0 
+         850.0 
          850.0 
          850.0 
       </constant>
 <constant cols="1" digits="1" name="pwmidle_clt_temps" rows="8" units="°C">
-         1.3332 
-         22.49775 
-         30.1081 
-         37.774 
-         47.16195 
-         57.4387 
-         74.7703 
-         123.8765 
+         -39.996 
+         0.0 
+         19.998 
+         39.996 
+         59.994 
+         71.9928 
+         99.99 
+         119.988 
       </constant>
 <constant digits="0" name="pwmidle_ms" units="ms">150.0</constant>
 <constant digits="0" name="pwmidle_close_delay" units="s">1.0</constant>
@@ -783,15 +783,15 @@
       </constant>
 <constant cols="1" digits="1" name="pwmidle_crank_dutyorsteps_duty" rows="4" units="%">
          50.176 
-         47.824 
-         45.864 
-         43.904 
+         49.0 
+         47.04 
+         45.08 
       </constant>
 <constant cols="1" digits="0" name="pwmidle_crank_dutyorsteps_steps" rows="4" units="steps">
          128.0 
-         122.0 
-         117.0 
-         112.0 
+         125.0 
+         120.0 
+         115.0 
       </constant>
 <constant cols="1" digits="1" name="pwmidle_crank_clt_temps" rows="4" units="°C">
          0.0 
@@ -1101,7 +1101,7 @@
 <constant name="f5_0_tss">"Off"</constant>
 <constant digits="1" name="pwmidlecranktaper" units="s">3.0</constant>
 <constant name="pwmidleset_inv">"Normal, 0%=off"</constant>
-<constant name="pwmidleset_koeo">"On"</constant>
+<constant name="pwmidleset_koeo">"Off"</constant>
 <constant digits="0" name="fc_rpm" units="rpm">2000.0</constant>
 <constant digits="1" name="fc_kpa" units="kPa">25.0</constant>
 <constant digits="1" name="fc_tps" units="%">25.0</constant>
@@ -1569,7 +1569,7 @@
 <constant digits="0" name="iacpostest" units="steps">18.0</constant>
 <constant digits="0" name="iachometest" units="steps">160.0</constant>
 <constant name="flashlock">"Locked"</constant>
-<constant name="idleadvance_on">"RPMs"</constant>
+<constant name="idleadvance_on">"Adaptive"</constant>
 <constant name="idleadvance_adder">"Set Value"</constant>
 <constant name="idleadvance_cl_cond">"Manual"</constant>
 <constant digits="1" name="idleadvance_tps" units="%">25.0</constant>
@@ -2524,10 +2524,10 @@
 <constant name="pwmidle_cl_opts_initval_clt">"Use CLT"</constant>
 <constant cols="1" digits="1" name="idleadvance_curve" rows="5" units="deg">
          14.0 
-         7.0 
-         3.0 
-         2.0 
-         0.0 
+         11.0 
+         10.0 
+         9.0 
+         6.0 
       </constant>
 <constant cols="1" digits="1" name="idleadvance_loads" rows="5" units="%">
          30.0 
@@ -2537,18 +2537,18 @@
          60.0 
       </constant>
 <constant cols="1" digits="0" name="idleadvance_rpms" rows="5" units="rpms">
-         700.0 
-         800.0 
-         850.0 
-         900.0 
-         1000.0 
+         -150.0 
+         -50.0 
+         0.0 
+         50.0 
+         150.0 
       </constant>
 <constant cols="1" digits="0" name="idleadvance_rpmsdelta" rows="5" units="rpms">
-         700.0 
-         800.0 
-         850.0 
-         900.0 
-         1000.0 
+         -150.0 
+         -50.0 
+         0.0 
+         50.0 
+         150.0 
       </constant>
 <constant cols="1" digits="1" name="idle_voltage_comp_voltage" rows="6" units="V">
          11.1 
