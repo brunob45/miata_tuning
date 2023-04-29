@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS Lite! 3.1.08 - EFI Analytics, Inc." tuneComment="" writeDate="Sat Apr 29 16:03:35 EDT 2023"/>
+<bibliography author="TunerStudio MS Lite! 3.1.08 - EFI Analytics, Inc." tuneComment="" writeDate="Sat Apr 29 16:15:28 EDT 2023"/>
 <versionInfo fileFormat="5.0" firmwareInfo="MS2%2FExtra+3.4.4+release++20201006+18%3A17BST%28c%29KC%2FJSM%2FJB+++MS2" nPages="7" signature="MS2Extra comms342h2"/>
 <page>
 <pcVariable name="tsCanId">"0"</pcVariable>
@@ -1498,6 +1498,7 @@
 <constant digits="1" name="testint" units="ms">99.968</constant>
 <constant digits="0" name="testrpm" units="RPM">1200.3841229</constant>
 <constant digits="3" name="testpw" units="ms">3.00033</constant>
+<constant digits="0" name="testinjcnt">1.0</constant>
 <constant name="testsel_inj">"Inj2"</constant>
 <constant name="testsel_coil">"CoilA"</constant>
 <constant cols="12" digits="1" name="advanceTable3" rows="12" units="deg">
