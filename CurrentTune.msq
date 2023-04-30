@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS 3.1.06 - EFI Analytics, Inc." tuneComment="" writeDate="Fri Aug 20 15:26:54 EDT 2021"/>
+<bibliography author="TunerStudio MS Lite! 3.1.08 - EFI Analytics, Inc." tuneComment="" writeDate="Sun Apr 30 17:11:41 EDT 2023"/>
 <versionInfo fileFormat="5.0" firmwareInfo="MS2%2FExtra+3.4.4+release++20201006+18%3A17BST%28c%29KC%2FJSM%2FJB+++PNP" nPages="7" signature="MS2Extra comms342hP"/>
 <page>
 <pcVariable name="tsCanId">"0"</pcVariable>
@@ -212,17 +212,17 @@
          95.0 
          100.0 
       </constant>
-<constant cols="1" digits="1" name="tempTable" rows="10" units="°F">
-         -40.0 
-         -20.0 
-         0.0 
-         20.0 
-         40.0 
-         60.0 
-         80.0 
-         101.2 
-         127.9 
-         158.4 
+<constant cols="1" digits="1" name="tempTable" rows="10" units="°C">
+         -39.996 
+         -28.886 
+         -17.776 
+         -6.666 
+         4.444 
+         15.554 
+         26.664 
+         38.4406 
+         53.27245 
+         70.2152 
       </constant>
 <constant cols="1" digits="1" name="taeRates" rows="4" units="%/s">
          210.0 
@@ -238,9 +238,9 @@
       </constant>
 <constant digits="1" name="map0" units="%">3.5</constant>
 <constant digits="1" name="mapmax" units="%">416.5</constant>
-<constant digits="1" name="clt0" units="°F">0.0</constant>
+<constant digits="1" name="clt0" units="°C">-17.776</constant>
 <constant digits="0" name="cltmult" units="%">100.0</constant>
-<constant digits="1" name="mat0" units="°F">0.0</constant>
+<constant digits="1" name="mat0" units="°C">-17.776</constant>
 <constant digits="0" name="matmult" units="%">100.0</constant>
 <constant digits="0" name="tpsMin" units="ADC">0.0</constant>
 <constant digits="0" name="tpsMax" units="ADC">1023.0</constant>
@@ -265,7 +265,7 @@
 <constant digits="0" name="IACminstep" units="steps">1.0</constant>
 <constant digits="0" name="dwellduty" units="%">49.53</constant>
 <constant digits="0" name="IACStart">160.0</constant>
-<constant digits="1" name="IdleHyst" units="°F">5.0</constant>
+<constant digits="1" name="IdleHyst" units="°C">-14.9985</constant>
 <constant digits="0" name="IACcrankxt" units="s">5.0</constant>
 <constant name="IACcurlim">"Hold current"</constant>
 <constant digits="3" name="injOpen" units="ms">1.3</constant>
@@ -300,8 +300,8 @@
 <constant name="MAFOption">"Off"</constant>
 <constant name="mapsample_opt1">"1"</constant>
 <constant name="mapsample_opt2">"Use event average"</constant>
-<constant digits="1" name="fastIdleT" units="°F">140.0</constant>
-<constant digits="1" name="egoTemp" units="°F">160.0</constant>
+<constant digits="1" name="fastIdleT" units="°C">59.994</constant>
+<constant digits="1" name="egoTemp" units="°C">71.104</constant>
 <constant digits="0" name="egoRPM" units="RPM">1300.0</constant>
 <constant digits="2" name="reqFuel" units="ms">12.5</constant>
 <constant digits="0" name="divider">2.0</constant>
@@ -687,15 +687,15 @@
          900.0 
          800.0 
       </constant>
-<constant cols="1" digits="1" name="pwmidle_clt_temps" rows="8" units="°F">
-         70.0 
-         80.0 
-         90.0 
-         100.0 
-         110.0 
-         120.0 
-         130.0 
-         140.0 
+<constant cols="1" digits="1" name="pwmidle_clt_temps" rows="8" units="°C">
+         21.109 
+         26.664 
+         32.219 
+         37.774 
+         43.329 
+         48.884 
+         54.439 
+         59.994 
       </constant>
 <constant digits="0" name="pwmidle_ms" units="ms">200.0</constant>
 <constant digits="0" name="pwmidle_close_delay" units="s">3.0</constant>
@@ -810,11 +810,11 @@
          92.0 
          92.0 
       </constant>
-<constant cols="1" digits="1" name="pwmidle_crank_clt_temps" rows="4" units="°F">
-         30.0 
-         60.0 
-         130.0 
-         175.0 
+<constant cols="1" digits="1" name="pwmidle_crank_clt_temps" rows="4" units="°C">
+         -1.111 
+         15.554 
+         54.439 
+         79.4365 
       </constant>
 <constant cols="6" digits="1" name="injadvTable3" rows="6" units="deg">
          90.0 90.0 90.0 90.0 90.0 90.0 
@@ -888,13 +888,13 @@
          180.0 
          150.0 
       </constant>
-<constant cols="1" digits="1" name="matTemps" rows="6" units="°F">
-         160.0 
-         180.0 
-         200.0 
-         220.0 
-         240.0 
-         260.0 
+<constant cols="1" digits="1" name="matTemps" rows="6" units="°C">
+         71.104 
+         82.214 
+         93.324 
+         104.434 
+         115.544 
+         126.654 
       </constant>
 <constant cols="1" digits="1" name="matRetard" rows="6" units="deg">
          0.0 
@@ -1044,13 +1044,13 @@
          100.0 
          100.0 
       </constant>
-<constant cols="1" digits="1" name="matCorrTemps" rows="6" units="°F">
-         40.0 
-         60.0 
-         100.0 
-         130.0 
-         160.0 
-         180.0 
+<constant cols="1" digits="1" name="matCorrTemps" rows="6" units="°C">
+         4.444 
+         15.554 
+         37.774 
+         54.439 
+         71.104 
+         82.214 
       </constant>
 <constant cols="1" digits="1" name="matCorrDelta" rows="6" units="%">
          0.0 
@@ -1063,17 +1063,17 @@
 <constant digits="1" name="boost_ctl_lowerlimit" units="kPa">20.0</constant>
 <constant name="injpw_pins">"Off"</constant>
 <constant digits="1" name="injpw_scale" units="%">100.0</constant>
-<constant cols="1" digits="1" name="temp_table_p5" rows="10" units="°F">
-         10.0 
-         30.0 
-         50.0 
-         70.0 
-         98.1 
-         110.4 
-         134.0 
-         152.4 
-         170.0 
-         180.0 
+<constant cols="1" digits="0" name="temp_table_p5" rows="10" units="°C">
+         -12.221 
+         -1.111 
+         9.999 
+         21.109 
+         36.71855 
+         43.5512 
+         56.661 
+         66.8822 
+         76.659 
+         82.214 
       </constant>
 <constant digits="0" name="tsf_rpm" units="rpm">6000.0</constant>
 <constant digits="1" name="tsf_kpa" units="kPa">100.0</constant>
@@ -1081,33 +1081,33 @@
 <constant digits="0" name="tss_rpm" units="rpm">6001.0</constant>
 <constant digits="1" name="tss_kpa" units="kPa">100.1</constant>
 <constant digits="1" name="tss_tps" units="%">80.1</constant>
-<constant cols="1" digits="1" name="EAEAWWCLTbins" rows="12" units="deg">
+<constant cols="1" digits="0" name="EAEAWWCLTbins" rows="12" units="deg">
          0.0 
-         20.0 
-         40.0 
-         60.0 
-         80.0 
-         100.0 
-         120.0 
-         130.0 
-         140.0 
-         160.0 
-         170.0 
-         180.0 
+         19.998 
+         39.996 
+         59.994 
+         79.992 
+         99.99 
+         119.988 
+         129.987 
+         139.986 
+         159.984 
+         169.983 
+         179.982 
       </constant>
-<constant cols="1" digits="1" name="EAESOWCLTbins" rows="12" units="deg">
+<constant cols="1" digits="0" name="EAESOWCLTbins" rows="12" units="deg">
          0.0 
-         20.0 
-         40.0 
-         60.0 
-         80.0 
-         100.0 
-         120.0 
-         130.0 
-         140.0 
-         160.0 
-         170.0 
-         180.0 
+         19.998 
+         39.996 
+         59.994 
+         79.992 
+         99.99 
+         119.988 
+         129.987 
+         139.986 
+         159.984 
+         169.983 
+         179.982 
       </constant>
 <constant name="ts_port_f">"PE1"</constant>
 <constant name="ts_port_s">"PE1"</constant>
@@ -1122,7 +1122,7 @@
 <constant digits="0" name="fc_rpm" units="rpm">1500.0</constant>
 <constant digits="1" name="fc_kpa" units="kPa">40.0</constant>
 <constant digits="1" name="fc_tps" units="%">5.0</constant>
-<constant digits="1" name="fc_clt" units="°F">90.0</constant>
+<constant digits="1" name="fc_clt" units="°C">32.219</constant>
 <constant digits="1" name="fc_delay" units="s">1.5</constant>
 <constant name="tacho_opt80">"Off"</constant>
 <constant name="tacho_opt40">"Normal"</constant>
@@ -1351,7 +1351,7 @@
 <constant digits="0" name="N2ORpm" units="RPM">3000.0</constant>
 <constant digits="0" name="N2ORpmMax" units="RPM">6000.0</constant>
 <constant digits="1" name="N2OTps" units="%">80.0</constant>
-<constant digits="1" name="N2OClt" units="°F">150.0</constant>
+<constant digits="1" name="N2OClt" units="°C">65.549</constant>
 <constant digits="2" name="N2OAngle" units="deg">10.0</constant>
 <constant digits="3" name="N2OPWLo" units="ms">6.0</constant>
 <constant digits="3" name="N2OPWHi" units="ms">3.0</constant>
@@ -1515,7 +1515,6 @@
 <constant digits="1" name="testint" units="ms">300.032</constant>
 <constant digits="0" name="testrpm" units="RPM">399.9573379</constant>
 <constant digits="3" name="testpw" units="ms">5.000328</constant>
-<constant digits="0" name="testinjcnt">0.0</constant>
 <constant name="testsel_inj">"Inj1"</constant>
 <constant name="testsel_coil">"CoilA"</constant>
 <constant cols="12" digits="1" name="advanceTable3" rows="12" units="deg">
@@ -1563,15 +1562,15 @@
 <constant digits="1" name="testinjPwmT" units="ms">1.040384</constant>
 <constant digits="0" name="testinjPwmPd" units="us">66.0</constant>
 <constant digits="0" name="testinjPwmP" units="%">30.0</constant>
-<constant cols="1" digits="1" name="RevLimLookup" rows="8" units="°F">
-         32.0 
-         68.0 
-         100.0 
-         120.0 
-         140.0 
-         160.0 
-         180.0 
-         200.0 
+<constant cols="1" digits="1" name="RevLimLookup" rows="8" units="°C">
+         0.0 
+         19.998 
+         37.774 
+         48.884 
+         59.994 
+         71.104 
+         82.214 
+         93.324 
       </constant>
 <constant cols="1" digits="0" name="RevLimRpm1" rows="8" units="RPM">
          2500.0 
@@ -1592,7 +1591,7 @@
 <constant digits="1" name="idleadvance_tps" units="%">2.0</constant>
 <constant digits="0" name="idleadvance_rpm" units="rpm">1000.0</constant>
 <constant digits="0" name="idleadvance_load" units="%">40.0</constant>
-<constant digits="1" name="idleadvance_clt" units="°F">140.0</constant>
+<constant digits="1" name="idleadvance_clt" units="°C">59.994</constant>
 <constant digits="0" name="idleadvance_delay" units="s">2.0</constant>
 <constant name="seq_inj">"Untimed injection"</constant>
 <constant name="extrainj">"Additional drivers"</constant>
@@ -2597,12 +2596,12 @@
          1100.0 
          1200.0 
       </constant>
-<constant cols="1" digits="1" name="pwmidle_cl_initialvalue_matorclt" rows="5" units="°F">
-         0.0 
-         50.0 
-         100.0 
-         150.0 
-         212.0 
+<constant cols="1" digits="1" name="pwmidle_cl_initialvalue_matorclt" rows="5" units="°C">
+         -17.776 
+         9.999 
+         37.774 
+         65.549 
+         99.99 
       </constant>
 <constant cols="5" digits="1" name="pwmidle_cl_initialvalues_duties" rows="5" units="%">
          27.44 31.36 35.28 39.2 43.12 
@@ -2761,16 +2760,16 @@
          113.8 
          120.0 
       </constant>
-<constant cols="1" digits="1" name="matCorrTemps2" rows="9" units="°F">
-         -40.0 
-         -4.0 
-         32.0 
-         59.0 
-         86.0 
-         113.0 
-         140.0 
-         194.0 
-         248.0 
+<constant cols="1" digits="1" name="matCorrTemps2" rows="9" units="°C">
+         -39.996 
+         -19.998 
+         0.0 
+         14.9985 
+         29.997 
+         44.9955 
+         59.994 
+         89.991 
+         119.988 
       </constant>
 <constant cols="1" digits="1" name="baroCorrDelta" rows="9" units="%">
          0.0 
@@ -3170,12 +3169,12 @@
       </constant>
 </page>
 <settings Comment="These setting are only used if this msq is opened without a project.">
-<setting name="FAHRENHEIT" value="FAHRENHEIT"/>
+<setting name="PORT_STATUS" value="PORT_STATUS"/>
 <setting name="EXPANDED_CLT_TEMP_OFF" value="EXPANDED_CLT_TEMP_OFF"/>
 <setting name="CAN_COMMANDS" value="CAN_COMMANDS"/>
 <setting name="EGTFULL_OFF" value="EGTFULL_OFF"/>
-<setting name="PORT_STATUS_OFF" value="PORT_STATUS_OFF"/>
 <setting name="OUTMSG_EDITING_OFF" value="OUTMSG_EDITING_OFF"/>
+<setting name="CELSIUS" value="CELSIUS"/>
 </settings>
 <userComments Comment="These are user comments that can be related to a particular setting or dialog."/>
 </msq>
