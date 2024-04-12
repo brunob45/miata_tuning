@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <msq xmlns="http://www.msefi.com/:msq">
-<bibliography author="TunerStudio MS Lite! 3.1.08 - EFI Analytics, Inc." tuneComment="" writeDate="Thu Apr 11 22:28:08 EDT 2024"/>
+<bibliography author="TunerStudio MS Lite! 3.1.08 - EFI Analytics, Inc." tuneComment="" writeDate="Thu Apr 11 22:36:45 EDT 2024"/>
 <versionInfo fileFormat="5.0" firmwareInfo="MS2%2FExtra+3.4.4+release++20201006+18%3A17BST%28c%29KC%2FJSM%2FJB+++MS2" nPages="7" signature="MS2Extra comms342h2"/>
 <page>
 <pcVariable name="tsCanId">"0"</pcVariable>
@@ -279,7 +279,6 @@
 <constant digits="1" name="egoDelta" units="%">0.3</constant>
 <constant digits="0" name="oldegoLimit" units="%">15.0</constant>
 <constant digits="1" name="AFRTarget" units="AFR">14.0</constant>
-<constant name="tempUnits">"Coolant/MAT Tables in °C"</constant>
 <constant name="MAFOption">"Off"</constant>
 <constant name="mapsample_opt1">"1"</constant>
 <constant name="mapsample_opt2">"Use event average"</constant>
